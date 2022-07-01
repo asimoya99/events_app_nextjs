@@ -1,14 +1,13 @@
-import React from 'react'
-import classes from '../../styles/event-summary.module.css'
+import classes from './event-summary.module.css';
 
-const EventSummary = (props) => {
-  const { title } = props
+function EventSummary(props) {
+  const { title } = props;
 
   return (
-    <section>
+    <section className={classes.summary}>
       <h1>{title}</h1>
     </section>
-  )
+  );
 }
 
-export default EventSummary
+export default EventSummary;
